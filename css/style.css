@@ -847,7 +847,7 @@ a {
 }
 
 .raw-data-sub .btn-input,
-.raw-data-sub .btn-btn-upload,
+.raw-data-sub .btn-upload,
 .raw-data-sub .btn-kpi,
 .btn-create {
     padding: 10px 20px;
@@ -856,6 +856,7 @@ a {
     border-radius: 5px;
     border: 1px solid #1A5D1F;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .raw-data-sub .rightbox_lock {
