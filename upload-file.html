@@ -44,13 +44,10 @@
                         <li class="nav-list dropdown-nav"><a href="#" class="nav-links">Larue Special Festive Promotion</a></li>
                     </ul>
                 </div>
-                <div class="profile-user dropdown-logout">
-                    <a href="#" class="user-img" onclick="openTigerTp()">
+                <div class="profile-user">
+                    <a href="#" class="user-img">
                         <img src="./img/img_avatar3.png" alt="avatar" class="avatar-user">
                     </a>
-                    <ul class="dropdown-menu_logout">
-                        <li class="nav-sub"><a href="#"><i class="ti-shift-left"></i> Logout</a></li>
-                    </ul>
                 </div>
             </div>
             <div class="row raw-data">
@@ -80,6 +77,7 @@
                     <span class="date-menu">Latest Update: 25/12/2021</span>
                     
                     <a href="./upload-file.html"><button class="btn-upload">UPLOAD NEW OUTLET LIST</button></a>
+                    
 
                 </div>
                 
@@ -159,7 +157,22 @@
             <!-- End Main Home -->
     </div>
 
-
+    <div id="uploadFile">
+        <div class="content-upload">
+            <div class="input-upload">
+                <div class="update-file-outlet">
+                    <span class="label">
+                        <i class='ti-clip'></i> Upload File
+                    </span>
+                    <input type="file" name="upload" id="upload" class="upload-box" placeholder="UPLOAD NEW OUTLET LIST">
+                </div>
+            </div>
+            <div class="btns">
+                <a href="./management.html"><button class="btn-cancel">Cancel</button></a>
+                <button class="btn-upload">Upload</button>
+            </div>
+        </div>
+    </div>
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -174,20 +187,6 @@
             var $trigger = $(".dropdown-nav");
             if($trigger !== event.target && !$trigger.has(event.target).length){
                 $(".dropdown-menu").slideUp("fast");
-            }            
-        });
-    </script>
-    <script>
-        $(document).ready(function(){
-            // Show hide popover
-            $(".dropdown-logout").click(function(){
-                $(this).find(".dropdown-menu_logout").slideToggle("fast");
-            });
-        });
-        $(document).on("click", function(event){
-            var $trigger = $(".dropdown-logout");
-            if($trigger !== event.target && !$trigger.has(event.target).length){
-                $(".dropdown-menu_logout").slideUp("fast");
             }            
         });
     </script>
