@@ -13,3 +13,17 @@ document.querySelectorAll('.sidebar-submenu').forEach(e => {
         dropdown_content.style.height = dropdown_content.classList.contains('active') ? active_height + 'px' : '0'
     }
 })
+
+
+// Left menu
+
+function openLeftMenu() {
+    document.getElementById("leftMenu").style.display = "block";
+  }
+  
+  function closeLeftMenu() {
+    document.getElementById("leftMenu").style.display = "none";
+  }
+
+
+
