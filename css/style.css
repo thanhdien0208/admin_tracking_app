@@ -610,6 +610,10 @@ a {
     opacity: 0.8;
 }
 
+#chart-share {
+    margin-top: 30%;
+}
+
 /* =======Management Page======= */
 
 
@@ -798,6 +802,8 @@ a {
     margin-right: 50px;
 }
 
+/* Upload - file */
+
 #uploadFile {
     position: fixed;
     top: 20%;
@@ -872,7 +878,86 @@ a {
 #uploadFile .btns .btn-upload:hover {
     opacity: .8;
 }
+/* ------------ */
 
+/* Unlock */
+/* Upload - file */
+
+#unlock {
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    z-index: 10000;
+}
+
+#unlock  .content-unlock {
+    background: #fff;
+    border: 1px solid #1A5D1F;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0,0.5);
+    width: 400px;
+    min-height: 200px;
+}
+
+#unlock .container-unlock {
+    position: relative;
+    width: 250px;
+    text-align: center;
+    margin: 10% auto;
+}
+
+#unlock .container-unlock .unlock-box {
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    width: 100%;
+    background: #fff;
+    cursor: pointer;
+    color: red;
+    border: 1px solid #1A5D1F;
+    padding: 10px;
+    text-transform:uppercase;
+    font-size:12px;
+    border-radius: 5px;
+}
+
+#unlock .unlock-box {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#unlock .btns {
+    text-align: center;
+}
+#unlock .btns .btn-cancel {
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #1A5D1F;
+    color: #1F6C2F;
+    border-radius: 5px;
+    background: transparent;
+    margin-right: 20px;
+}
+#unlock .btns .btn-upload {
+    padding: 8px 10px;
+    outline: none;
+    border: 1px solid #1A5D1F;
+    color: #fff;
+    border-radius: 5px;
+    background: #1F6C2F;
+}
+
+#unlock .btns .btn-cancel:hover,
+#unlock .btns .btn-upload:hover {
+    opacity: .8;
+}
+/* ----------- */
 .main-table_managenment .th-btns div {
     margin: 10px;
 }
