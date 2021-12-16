@@ -1710,3 +1710,20 @@ th, td {
 .dropdown-content a:hover {
     background-color: rgba(80, 151, 85, 0.404);
 }
+
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1024px) {
+    .app {
+        display: none;
+    }
+    body::before {
+        content: "Giao diện chưa hỗ trợ trên Table/Mobile";
+        color: red;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+}
