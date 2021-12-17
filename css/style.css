@@ -457,6 +457,12 @@ a {
     width: 95%;
 }
 
+.content-height {
+    overflow-y: auto;
+    height: 250px;
+    width: 95%;
+}
+
 .sidebar-menu_dropdown-content .sidebar-menu_sub {
     display: flex;
     position: relative;
