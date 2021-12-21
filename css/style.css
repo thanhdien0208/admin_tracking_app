@@ -121,7 +121,7 @@ a {
     background: #F1F1F1;
     border: 2px solid #05F22B;
     box-shadow: 1px 1px 5px #7DFF92;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     border-radius: 5px;
     color: #111;
     font-family: 'Roboto Slab', serif;
