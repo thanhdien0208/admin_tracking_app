@@ -210,11 +210,11 @@ var options = {
 
 var options = {
     series: [{
-    name: 'Total',
+    name: '[Brand] Volume',
     type: 'column',
     data: [1152, 1000, 660, 648, 618, 600, 546, 538, 534, 527]
   }, {
-    name: 'Top %',
+    name: '[Brand] Table Share',
     type: 'line',
     data: [90,81,43,94,100,100,95,65,87,78],
   }],
