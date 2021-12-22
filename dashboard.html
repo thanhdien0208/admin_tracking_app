@@ -279,9 +279,11 @@
                             <div class="num-active">
                                 <p class="chart-title">ACTIVATION PROGRESS</p>
                                 <br>
-                                <span class="number-one">142</span>
-                                <p class="desc">VS.Taget</p>
-                                <span class="number-two">21%</span>
+                                <p class="desc">Actual Acts</p>
+                                <div id="chart-acti"></div>
+                                <!-- <span class="number-one">142</span> -->
+                                <p class="desc">Total Acts</p>
+                                <span class="number-two">200/100%</span>
                             </div>
                         </div>
                         <div class="col-vertical">
@@ -289,20 +291,25 @@
                                 <p class="chart-title">VOLUME PERFORMANCE</p>
                                 <br>
                                 <p class="desc">(Can/Bottle)</p>
-                                <span class="number-one">142</span>
+                                <p class="desc">Actual Volume</p>
+                                <span class="number-one max-size">25797</span>
                                 <br>
-                                <span class="number-two">21%</span>
-                                <div class="icon-color">
+                                <p class="desc">Target Volume</p>
+                                <span class="number-two">26412</span>
+                                <!-- <div class="icon-color">
                                     <span class="icon-one"></span> <p class="smart-desc">Actual Achieved</p>
                                     <span class="icon-two"></span> <p class="smart-desc">Volume Target</p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="col-vertical">
                             <div class="num-active">
-                                <p class="chart-title">VOLUME PERFORMANCE</p>
+                                <p class="chart-title">VOLUME PROGRESS</p>
                                 <br>
-                                <span class="number-two">21%</span>
+                                <p class="desc">Actual Volume</p>
+                                <div id="chart-prog"></div>
+                                <p class="desc">Total Volume</p>
+                                <span class="number-two">100000/100%</span>
                             </div>
                         </div>
                     </div>
@@ -406,18 +413,26 @@
                                 <div class="main">
                                     <div id="chart-product"></div>
                                 </div>
-                                <div class="footer">
+                                <!-- <div class="footer">
                                     <div class="icon-color">
                                         <span class="icon-one"></span> <p class="smart-desc">Actual Achieved</p>
                                         <span class="icon-two"></span> <p class="smart-desc">Volume Target</p>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="row">
                             <div class="row-bottom">
                                 <div class="col-12">
                                     <p class="chart-title">TOP 10 OUTLET PERFORMANCE</p>
+                                    <div class="btns">
+                                        <button id="changeText" class="button button-change">DESCENDING</button>
+                                        <div class="btn-arrow">
+                                            <button><i class='bx bx-chevrons-up'></i></button> <br>
+                                            <button><i class='bx bx-chevrons-down' ></i></button>
+                                        </div>                                    
+                                    </div>
+
                                     <div id="chart-top"></div>
                                 </div>
                             </div>
@@ -425,45 +440,13 @@
                     </div>
                 </div>
             </div>
-
-            
         </div>
     </div>
     
-    <!-- Messenger Plugin chat Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Plugin chat code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "108572487599775");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <!-- Messenger Chat Plugin Code -->
+    
     <script>
         $(document).ready(function(){
             // Show hide popover

@@ -25,5 +25,18 @@ function openLeftMenu() {
     document.getElementById("leftMenu").style.display = "none";
   }
 
+// Change text button
+
+const btn = document.getElementById("changeText");
+
+btn.addEventListener("click", ()=>{
+
+    if(btn.innerText === "DESCENDING"){
+        btn.innerText = "ASCENDING";
+    }else{
+        btn.innerText= "DESCENDING";
+    }
+});
+
 
 

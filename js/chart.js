@@ -1,3 +1,102 @@
+// chart activation progress bar
+
+var options = {
+  series: [{
+  name: 'Actual Volume',
+  data: [42]
+}],
+  chart: {
+  type: 'bar',
+  height: 130,
+  stacked: true,
+},
+plotOptions: {
+  bar: {
+    horizontal: true,
+  },
+},
+stroke: {
+  width: 1,
+  colors: ['#fff']
+},
+
+labels: [''],
+yaxis: {
+  title: {
+    text: undefined
+  },
+},
+tooltip: {
+  y: {
+    formatter: function (val) {
+      return val + "/21%"
+    }
+  }
+},
+colors: ['#198631'],
+fill: {
+  opacity: 1
+},
+legend: {
+  position: 'top',
+  horizontalAlign: 'left',
+  offsetX: 40
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#chart-acti"), options);
+chart.render();
+
+// chart activation progress bar
+
+var options = {
+  series: [{
+  name: 'Actual Acts',
+  data: [25000],
+  
+}],
+  chart: {
+  type: 'bar',
+  height: 130,
+  stacked: true,
+},
+plotOptions: {
+  bar: {
+    horizontal: true,
+  },
+},
+stroke: {
+  width: 1,
+  colors: ['#fff']
+},
+
+labels: [''],
+yaxis: {
+  title: {
+    text: undefined
+  },
+},
+tooltip: {
+  y: {
+    formatter: function (val) {
+      return val + "/25%"
+    }
+  }
+},
+colors: ['#198631'],
+fill: {
+  opacity: 1
+},
+legend: {
+  position: 'top',
+  horizontalAlign: 'left',
+  offsetX: 40
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#chart-prog"), options);
+chart.render();
+
 // chart-act
 
 var options = {
@@ -48,7 +147,7 @@ var options = {
 var options = {
     series: [{
     name: 'Inflation',
-    data: [18,17,5,15,15]
+    data: [18,17,5,20,15,15]
   }],
     chart: {
     height: 270,
@@ -120,7 +219,7 @@ var options = {
     data: [90,81,43,94,100,100,95,65,87,78],
   }],
     chart: {
-    height: 350,
+    height: 370,
     type: 'line',
   },
   stroke: {
