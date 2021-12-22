@@ -121,7 +121,7 @@ var options = {
 var options = {
     series: [79, 20, 1],
     chart: {
-    width: 300,
+    width: 350,
     type: 'pie',
   },
   labels: ['Heineken', 'HVN', 'Cambi'],
