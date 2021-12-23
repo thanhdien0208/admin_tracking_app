@@ -172,6 +172,14 @@ a {
     z-index: 1;
 }
 
+.field-icon {
+    float: right;
+    margin-left: -35px;
+    margin-top: 25px;
+    position: absolute;
+    z-index: 2;
+  }
+
 /* Success Page */
 
 .header-success {
