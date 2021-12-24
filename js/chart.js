@@ -119,13 +119,13 @@ var options = {
 //   chart-share
 
 var options = {
-    series: [79, 20, 1],
+    series: [70, 5, 20, 5],
     chart: {
     width: 350,
     type: 'pie',
   },
-  labels: ['Heineken', 'HVN', 'Cambi'],
-  colors: ['#198631', '#1C263F', '#939393'],
+  labels: ['Tiger', 'HNK', 'Orther Beer','Orther'],
+  colors: ['#198631','#95b79d', '#1C263F', '#939393'],
   responsive: [{
     breakpoint: 480,
     options: {
