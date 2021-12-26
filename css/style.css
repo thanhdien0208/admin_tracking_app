@@ -1558,7 +1558,7 @@ a {
 #chart-top {
     margin-top: 70px;
     width: 100vw;
-    overflow-x:auto;
+    /* overflow-x:auto; */
 }
 
 
