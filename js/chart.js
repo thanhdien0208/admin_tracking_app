@@ -212,11 +212,11 @@ var options = {
     series: [{
     name: '[Brand] Volume',
     type: 'column',
-    data: [1152, 1000, 660, 648, 618, 600, 546, 538, 534, 527]
+    data: [120,350,400,500,527,534,538,546,550,600,610,618,620,648,660,700,720,900,1100,1152]
   }, {
     name: '[Brand] Table Share',
     type: 'line',
-    data: [90,81,43,94,100,100,95,65,87,78],
+    data: [90,81,43,94,100,100,95,65,87,78,65,58,60,77,40,55,68,50,70],
   }],
     chart: {
     height: 370,
@@ -235,7 +235,7 @@ var options = {
         colors: ['#1C263F']
       }
   },
-  labels: ['HẾN','LÚA NẾP','ỐC NGON','TƠ','ĐỒNG NỘI','TRÀNG AN','BÒ TƠ','HƯƠNG','LẨU 79','LẨU DÊ'],
+  labels: ['HẾN','LÚA NẾP','ỐC NGON','TƠ','ĐỒNG NỘI','TRÀNG AN','BÒ TƠ','HƯƠNG','LẨU 79','LẨU DÊ','ỐC TƠ','YẾN MẠCH','ỐC HƯƠNG','TƠ','HƯƠNG','LẨU 79','LẨU DÊ','NẾP','TRÀNG TIỀN','ỐC TRE'],
   colors: ['#198631', '#1C263F'],
   yaxis: [{
     title: {

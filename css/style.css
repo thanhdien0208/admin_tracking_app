@@ -1488,6 +1488,7 @@ a {
     margin: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     width: 100%;
+    overflow: auto;
 }
 
 .box-right .row-bottom .col-12 {
@@ -1556,6 +1557,8 @@ a {
 
 #chart-top {
     margin-top: 70px;
+    width: 100vw;
+    overflow-x:auto;
 }
 
 
