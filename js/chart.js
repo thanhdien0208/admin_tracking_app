@@ -216,14 +216,15 @@ var options = {
   }, {
     name: '[Brand] Table Share',
     type: 'line',
-    data: [90,81,43,94,100,100,95,65,87,78,65,58,60,77,40,55,68,50,70],
+    data: [90,81,43,94,100,100,95,65,87,78,65,58,60,77,40,55,68,50,70,89],
   }],
     chart: {
     height: 370,
+    with: 400,
     type: 'line',
   },
   stroke: {
-    width: [0, 4],
+    width: [0, 3],
   },
   title: {
     text: 'Traffic Sources'
