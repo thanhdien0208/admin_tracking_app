@@ -101,7 +101,9 @@ chart.render();
 
 var options = {
     chart: {
-      type: 'bar'
+      type: 'bar',
+      height: 200,
+      width: 200,
     },
     series: [{
       name: 'ACT',
