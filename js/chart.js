@@ -76,6 +76,7 @@ yaxis: {
     text: undefined
   },
 },
+
 tooltip: {
   y: {
     formatter: function (val) {
@@ -102,13 +103,23 @@ chart.render();
 var options = {
     chart: {
       type: 'bar',
-      height: 200,
+      height: 220,
       width: 200,
     },
+    plotOptions: {
+      bar: {
+        borderRadius: 5,
+      }
+    },
     series: [{
-      name: 'ACT',
-      data: [186,182],
-    }],
+      name: 'Average Tiger Volume',
+      data: [186],
+    },
+    {
+      name: 'Average Target Volume',
+      data: [182],
+    },
+  ],
     labels: ['Total'],
     colors: ['#198631', '#1C263F']
   }
@@ -126,7 +137,7 @@ var options = {
     width: 350,
     type: 'pie',
   },
-  labels: ['Tiger', 'HNK', 'Orther Beer','Orther'],
+  // labels: ['Tiger', 'HNK', 'Orther Beer','Orther'],
   colors: ['#198631','#95b79d', '#1C263F', '#939393'],
   responsive: [{
     breakpoint: 480,
@@ -147,10 +158,35 @@ var options = {
 // chart-product
 
 var options = {
-    series: [{
-    name: 'Inflation',
-    data: [18,17,5,20,15,15]
-  }],
+  //   series: [{
+  //   name: 'Inflation',
+  //   data: [18,17,5,20,15,15]
+  // },
+  series: [{
+    name: ' Glass 30cl',
+    data: [18],
+  },
+  {
+    name: 'Cup 33cl 3D',
+    data: [17],
+  },
+  {
+    name: 'Glass of Casablance',
+    data: [5],
+  },
+  {
+    name: 'Wallet',
+    data: [20],
+  },
+  {
+    name: 'Tiger Crystal Hat',
+    data: [15],
+  },
+  {
+    name: 'Beer Voucher',
+    data: [15],
+  },
+],
     chart: {
     height: 270,
     type: 'bar',
@@ -191,7 +227,7 @@ var options = {
   
   },
   title: {
-    text: 'Total',
+    text: '',
     floating: true,
     offsetY: 240,
     align: 'center',
@@ -199,8 +235,9 @@ var options = {
       color: '#444'
     }
   },
-  labels: [''],
-  colors: ['#198631', '#1C263F'],
+  // labels: ['Glass 30cl','Cup 33cl 3D','Glass of Casablance','Wallet','Tiger Crystal Hat','Beer Voucher' ],
+  labels: ['' ],
+  colors: ['#198631', '#1C263F','#727170','#b5f398','#c4c4c4','#49566e'],
 
 
   };
@@ -237,6 +274,11 @@ var options = {
     style: {
         colors: ['#1C263F']
       }
+  },
+  plotOptions: {
+    bar: {
+      borderRadius: 5,
+    }
   },
   labels: ['HẾN','LÚA NẾP','ỐC NGON','TƠ','ĐỒNG NỘI','TRÀNG AN','BÒ TƠ','HƯƠNG','LẨU 79','LẨU DÊ','ỐC TƠ','YẾN MẠCH','ỐC HƯƠNG','TƠ','HƯƠNG','LẨU 79','LẨU DÊ','NẾP','TRÀNG TIỀN','ỐC TRE'],
   colors: ['#198631', '#1C263F'],
