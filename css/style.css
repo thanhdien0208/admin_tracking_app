@@ -1561,6 +1561,18 @@ a {
     /* overflow-x:auto; */
 }
 
+/* Ẩn icon down SVG */
+
+.apexcharts-zoom-icon, .apexcharts-zoomin-icon, .apexcharts-zoomout-icon, .apexcharts-reset-icon, .apexcharts-pan-icon, .apexcharts-selection-icon, .apexcharts-menu-icon, .apexcharts-toolbar-custom-icon {
+    /* cursor: pointer;
+    width: 20px;
+    height: 20px;
+    line-height: 24px;
+    color: #6E8192;
+    text-align: center; */
+    display: none;
+}
+
 
 /* Dropdown table */
 
