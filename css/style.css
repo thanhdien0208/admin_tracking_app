@@ -1550,6 +1550,11 @@ a {
     border-radius: 5px;
 }
 
+#chart-acti,
+#chart-prog {
+    margin-left: -25px;
+}
+
 #chart-act {
     margin-top: 20px;
 }
