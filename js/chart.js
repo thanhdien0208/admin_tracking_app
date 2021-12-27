@@ -100,33 +100,71 @@ chart.render();
 
 // chart-act
 
+// var options = {
+//     chart: {
+//       type: 'bar',
+//       height: 220,
+//       width: 200,
+//     },
+//     plotOptions: {
+//       bar: {
+//         borderRadius: 5,
+//       }
+//     },
+//     series: [{
+//       name: 'Average Tiger Volume',
+//       data: [186],
+//     },
+//     {
+//       name: 'Average Target Volume',
+//       data: [182],
+//     },
+//   ],
+//     labels: ['Total'],
+//     colors: ['#198631', '#1C263F']
+//   }
+  
+//   var chart = new ApexCharts(document.querySelector("#chart-act"), options);
+  
+//   chart.render();
+
+
+// Chart-share 
+
 var options = {
-    chart: {
-      type: 'bar',
-      height: 220,
-      width: 200,
-    },
-    plotOptions: {
-      bar: {
-        borderRadius: 5,
-      }
-    },
-    series: [{
-      name: 'Average Tiger Volume',
-      data: [186],
-    },
-    {
-      name: 'Average Target Volume',
-      data: [182],
-    },
-  ],
-    labels: ['Total'],
-    colors: ['#198631', '#1C263F']
+  series: [{
+  data: [186,182]
+}],
+  chart: {
+  height: 200,
+  // width: 200,
+  type: 'bar',
+},
+labels: ['Average Tiger Volume','Average Target Volume'],
+colors: ['#198631', '#1C263F'],
+plotOptions: {
+  bar: {
+    columnWidth: '30%',
+    distributed: true,
+    borderRadius: 5,
   }
-  
-  var chart = new ApexCharts(document.querySelector("#chart-act"), options);
-  
-  chart.render();
+},
+legend: {
+  show: true
+},
+xaxis: {
+  categories: ['Average Tiger Volume','Average Target Volume'],
+  labels: {
+    style: {
+      colors: ['#111'],
+      fontSize: '12px',
+    }
+  },
+},
+};
+
+var chart = new ApexCharts(document.querySelector("#chart-act"), options);
+chart.render();
 
 
 //   chart-share
@@ -155,91 +193,182 @@ var options = {
   var chart = new ApexCharts(document.querySelector("#chart-share"), options);
   chart.render();
 
+
 // chart-product
 
-var options = {
-  //   series: [{
-  //   name: 'Inflation',
-  //   data: [18,17,5,20,15,15]
-  // },
-  series: [{
-    name: ' Glass 30cl',
-    data: [18],
-  },
-  {
-    name: 'Cup 33cl 3D',
-    data: [17],
-  },
-  {
-    name: 'Glass of Casablance',
-    data: [5],
-  },
-  {
-    name: 'Wallet',
-    data: [20],
-  },
-  {
-    name: 'Tiger Crystal Hat',
-    data: [15],
-  },
-  {
-    name: 'Beer Voucher',
-    data: [15],
-  },
-],
+// var options = {
+//   //   series: [{
+//   //   name: 'Inflation',
+//   //   data: [18,17,5,20,15,15]
+//   // },
+//   series: [{
+//     name: ' Glass 30cl',
+//     data: [18],
+//   },
+//   {
+//     name: 'Cup 33cl 3D',
+//     data: [17],
+//   },
+//   {
+//     name: 'Glass of Casablance',
+//     data: [5],
+//   },
+//   {
+//     name: 'Wallet',
+//     data: [20],
+//   },
+//   {
+//     name: 'Tiger Crystal Hat',
+//     data: [15],
+//   },
+//   {
+//     name: 'Beer Voucher',
+//     data: [15],
+//   },
+// ],
+//     chart: {
+//     height: 270,
+//     type: 'bar',
+//   },
+//   plotOptions: {
+//     bar: {
+//       borderRadius: 5,
+//       dataLabels: {
+//         position: 'top', // top, center, bottom
+//       },
+      
+//     }
+//   },
+//   dataLabels: {
+//     enabled: true,
+//     formatter: function (val) {
+//       return val + "%";
+//     },
+//     offsetY: -20,
+//     style: {
+//       fontSize: '12px',
+//       colors: ["#304758"]
+//     }
+//   },
+//   yaxis: {
+//     axisBorder: {
+//       show: false
+//     },
+//     axisTicks: {
+//       show: false,
+//     },
+//     labels: {
+//       show: false,
+//       formatter: function (val) {
+//         return val + "%";
+//       }
+//     }
+  
+//   },
+//   title: {
+//     text: '',
+//     floating: true,
+//     offsetY: 240,
+//     align: 'center',
+//     style: {
+//       color: '#444'
+//     }
+//   },
+//   plotOptions: {
+//     bar: {
+//       horizontal: false,
+//       columnWidth: '55%',
+//       endingShape: 'rounded'
+//     },
+//   },
+//   // labels: ['Glass 30cl','Cup 33cl 3D','Glass of Casablance','Wallet','Tiger Crystal Hat','Beer Voucher' ],
+//   labels: ['' ],
+//   colors: ['#198631', '#1C263F','#727170','#b5f398','#c4c4c4','#49566e'],
+//   plotOptions: {
+//     bar: {
+//       columnWidth: '45%',
+//       distributed: true,
+//     }
+//   },
+
+//   };
+
+//   var chart = new ApexCharts(document.querySelector("#chart-"), options);
+//   chart.render();
+
+
+  // chart-product
+
+  var options = {
+    series: [{
+    data: [18,17,5,20,15,15]
+  }],
     chart: {
-    height: 270,
+    height:280,
     type: 'bar',
+    // events: {
+    //   click: function(chart, w, e) {
+    //     // console.log(chart, w, e)
+    //   }
+    // }
   },
+  colors: ['#198631', '#1C263F','#727170','#b5f398','#c4c4c4','#49566e'],
+  // labels: ['Glass 30cl','Cup 33cl 3D','Glass of Casablance','Wallet','Tiger Crystal Hat','Beer Voucher' ],
   plotOptions: {
     bar: {
+      columnWidth: '60%',
+      distributed: true,
       borderRadius: 5,
       dataLabels: {
         position: 'top', // top, center, bottom
       },
-      
     }
   },
-  dataLabels: {
-    enabled: true,
-    formatter: function (val) {
-      return val + "%";
-    },
-    offsetY: -20,
-    style: {
-      fontSize: '12px',
-      colors: ["#304758"]
-    }
-  },
-  yaxis: {
-    axisBorder: {
-      show: false
-    },
-    axisTicks: {
-      show: false,
-    },
-    labels: {
-      show: false,
-      formatter: function (val) {
-        return val + "%";
-      }
-    }
   
+  dataLabels: {
+        enabled: true,
+        formatter: function (val) {
+          return val + "%";
+        },
+        offsetY: -20,
+        style: {
+          fontSize: '12px',
+          colors: ["#304758"]
+        }
+      },
+      yaxis: {
+        axisBorder: {
+          show: false
+        },
+        axisTicks: {
+          show: false,
+        },
+        labels: {
+          show: false,
+          formatter: function (val) {
+            return val + "%";
+          }
+        }
+      },
+  legend: {
+    show: true
   },
-  title: {
-    text: '',
-    floating: true,
-    offsetY: 240,
-    align: 'center',
-    style: {
-      color: '#444'
-    }
+  xaxis: {
+    categories: [
+      ['Glass', '30cl'],
+      ['Cup 33cl', '3D'],
+      ['Glass of', 'Casablance'],
+      'Wallet',
+      ['Tiger', 'Crystal','Hat'],
+      ['Beer', 'Voucher'], 
+    ],
+    labels: {
+      style: {
+        colors: ['#111'],
+        fontSize: '12px',
+      }
+    },
   },
-  // labels: ['Glass 30cl','Cup 33cl 3D','Glass of Casablance','Wallet','Tiger Crystal Hat','Beer Voucher' ],
-  labels: ['' ],
-  colors: ['#198631', '#1C263F','#727170','#b5f398','#c4c4c4','#49566e'],
-
-
   };
 
   var chart = new ApexCharts(document.querySelector("#chart-product"), options);
