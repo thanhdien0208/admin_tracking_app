@@ -1582,9 +1582,9 @@ a {
     display: none;
 }
 
-/* .apexcharts-legend-series {
+.apexcharts-legend-series {
     display: none;
-} */
+}
 
 .box-right .col-horizontal .legend span {
     margin-left: 20px;
