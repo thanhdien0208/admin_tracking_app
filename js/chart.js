@@ -1,101 +1,309 @@
 // chart activation progress bar
 
-var options = {
-  series: [{
-  name: 'Actual Volume',
-  data: [42]
-}],
-  chart: {
-  type: 'bar',
-  height: 130,
-  stacked: true,
-},
-plotOptions: {
-  bar: {
-    horizontal: true,
-  },
-},
-stroke: {
-  width: 1,
-  colors: ['#fff']
-},
+// var options = {
+//   series: [{
+//   name: 'Actual Volume',
+//   data: [42]
+// }],
+//   chart: {
+//   type: 'bar',
+//   height: 130,
+//   stacked: true,
+// },
+// plotOptions: {
+//   bar: {
+//     horizontal: true,
+//   },
+// },
+// stroke: {
+//   width: 1,
+//   colors: ['#fff']
+// },
 
-labels: [''],
-yaxis: {
-  title: {
-    text: undefined
-  },
-},
-tooltip: {
-  y: {
-    formatter: function (val) {
-      return val + "/21%"
-    }
-  }
-},
-colors: ['#198631'],
-fill: {
-  opacity: 1
-},
-legend: {
-  position: 'top',
-  horizontalAlign: 'left',
-  offsetX: 40
-}
-};
+// labels: [''],
+// yaxis: {
+//   title: {
+//     text: undefined
+//   },
+// },
+// tooltip: {
+//   y: {
+//     formatter: function (val) {
+//       return val + "/21%"
+//     }
+//   }
+// },
+// colors: ['#198631'],
+// fill: {
+//   opacity: 1
+// },
+// legend: {
+//   position: 'top',
+//   horizontalAlign: 'left',
+//   offsetX: 40
+// }
+// };
 
-var chart = new ApexCharts(document.querySelector("#chart-acti"), options);
-chart.render();
+// var chart = new ApexCharts(document.querySelector("#chart-acti"), options);
+// chart.render();
 
 // chart activation progress bar
 
 var options = {
   series: [{
+  data: [42],
   name: 'Actual Acts',
-  data: [25000],
-  
-}],
+},
+],
   chart: {
-  type: 'bar',
   height: 130,
-  stacked: true,
+  type: 'bar',
+},
+labels: [''],
+colors: ['#198631'],
+legend: {
+  show: false,
 },
 plotOptions: {
   bar: {
+    columnWidth: '15%',
+    distributed: true,
+    borderRadius: 5,
     horizontal: true,
-  },
-},
-stroke: {
-  width: 1,
-  colors: ['#fff']
-},
-
-labels: [''],
-yaxis: {
-  title: {
-    text: undefined
-  },
-},
-
-tooltip: {
-  y: {
-    formatter: function (val) {
-      return val + "/25%"
-    }
   }
 },
-colors: ['#198631'],
-fill: {
-  opacity: 1
+
+
+xaxis: {
+  categories: [''],
+  labels: {
+    style: {
+      colors: ['#111'],
+      fontSize: '12px',
+    }
+  },
 },
+dataLabels: {
+  enabled: true,
+  formatter: function (val) {
+    return val + "/21%";
+  },
+  style: {
+    fontSize: '12px',
+    colors: ["#fff"]
+  }
+},
+
+};
+
+var chart = new ApexCharts(document.querySelector("#chart-acti"), options);
+chart.render();
+
+// =====
+
+var options = {
+  series: [{
+  data: [200],
+  name: 'Total Acts',
+},
+],
+  chart: {
+  height: 130,
+  type: 'bar',
+},
+labels: [''],
+colors: ['#1C263F'],
 legend: {
-  position: 'top',
-  horizontalAlign: 'left',
-  offsetX: 40
-}
+  show: false,
+},
+plotOptions: {
+  bar: {
+    columnWidth: '15%',
+    distributed: true,
+    borderRadius: 5,
+    horizontal: true,
+  }
+},
+
+
+xaxis: {
+  categories: [''],
+  labels: {
+    style: {
+      colors: ['#111'],
+      fontSize: '12px',
+    }
+  },
+},
+dataLabels: {
+  enabled: true,
+  formatter: function (val) {
+    return val + "/100%";
+  },
+  style: {
+    fontSize: '12px',
+    colors: ["#fff"]
+  }
+},
+
+};
+
+var chart = new ApexCharts(document.querySelector("#chart-acti__total"), options);
+chart.render();
+
+// chart activation progress bar
+
+// var options = {
+//   series: [{
+//   name: 'Actual Acts',
+//   data: [25000],
+  
+// }],
+//   chart: {
+//   type: 'bar',
+//   height: 130,
+//   stacked: true,
+// },
+// plotOptions: {
+//   bar: {
+//     horizontal: true,
+//   },
+// },
+// stroke: {
+//   width: 1,
+//   colors: ['#fff']
+// },
+
+// labels: [''],
+// yaxis: {
+//   title: {
+//     text: undefined
+//   },
+// },
+
+// tooltip: {
+//   y: {
+//     formatter: function (val) {
+//       return val + "/25%"
+//     }
+//   }
+// },
+// colors: ['#198631'],
+// fill: {
+//   opacity: 1
+// },
+// legend: {
+//   position: 'top',
+//   horizontalAlign: 'left',
+//   offsetX: 40
+// }
+// };
+
+// var chart = new ApexCharts(document.querySelector("#chart-prog"), options);
+// chart.render();
+
+// Chart Prog
+
+var options = {
+  series: [{
+  data: [25000],
+  name:'Actual Volume',
+},
+],
+  chart: {
+  height: 130,
+  type: 'bar',
+},
+labels: [''],
+colors: ['#198631'],
+legend: {
+  show: false,
+},
+plotOptions: {
+  bar: {
+    
+    distributed: true,
+    borderRadius: 5,
+    horizontal: true,
+  }
+},
+
+
+// xaxis: {
+//   categories: [''],
+//   labels: {
+//     style: {
+//       colors: ['#111'],
+//       fontSize: '12px',
+//     }
+//   },
+// },
+dataLabels: {
+  enabled: true,
+  formatter: function (val) {
+    return val + "/25%";
+  },
+  style: {
+    fontSize: '12px',
+    colors: ["#fff"]
+  }
+},
+
 };
 
 var chart = new ApexCharts(document.querySelector("#chart-prog"), options);
+chart.render();
+
+// ======
+
+var options = {
+  series: [{
+  data: [100000],
+  name:'Total Volume',
+},
+],
+  chart: {
+  height: 130,
+  type: 'bar',
+},
+labels: [''],
+colors: ['#1C263F'],
+legend: {
+  show: false,
+},
+plotOptions: {
+  bar: {
+    
+    distributed: true,
+    borderRadius: 5,
+    horizontal: true,
+  }
+},
+
+
+// xaxis: {
+//   categories: [''],
+//   labels: {
+//     style: {
+//       colors: ['#111'],
+//       fontSize: '12px',
+//     }
+//   },
+// },
+dataLabels: {
+  enabled: true,
+  formatter: function (val) {
+    return val + "/100%";
+  },
+  style: {
+    fontSize: '12px',
+    colors: ["#fff"]
+  }
+},
+
+};
+
+var chart = new ApexCharts(document.querySelector("#chart-prog__total"), options);
 chart.render();
 
 // chart-act
@@ -152,6 +360,9 @@ plotOptions: {
 legend: {
   show: true
 },
+lines: {
+  show: false,
+},
 xaxis: {
   categories: ['Average Tiger Volume','Average Target Volume'],
   labels: {
@@ -160,7 +371,15 @@ xaxis: {
       fontSize: '12px',
     }
   },
+  lines: {
+    show: false,
+  }
 },
+yaxis: {
+  lines: {
+    show: false,
+  }
+}
 };
 
 var chart = new ApexCharts(document.querySelector("#chart-act"), options);
@@ -184,8 +403,8 @@ var options = {
         width: 200
       },
       legend: {
-        position: 'bottom'
-      }
+        show: false
+      },
     }
   }]
   };
@@ -306,11 +525,7 @@ var options = {
     chart: {
     height:280,
     type: 'bar',
-    // events: {
-    //   click: function(chart, w, e) {
-    //     // console.log(chart, w, e)
-    //   }
-    // }
+    
   },
   colors: ['#198631', '#1C263F','#727170','#b5f398','#c4c4c4','#49566e'],
   // labels: ['Glass 30cl','Cup 33cl 3D','Glass of Casablance','Wallet','Tiger Crystal Hat','Beer Voucher' ],
