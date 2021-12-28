@@ -122,6 +122,61 @@ var chart = new ApexCharts(document.querySelector("#chart-prog"), options);
 chart.render();
 
 
+// chart activation progress bar
+
+var options = {
+  series: [{
+  data: [25797,26412],
+},
+],
+  chart: {
+  height: 200,
+  type: 'bar',
+},
+labels: [''],
+colors: ['#198631','#1C263F'],
+legend: {
+  show: false,
+},
+plotOptions: {
+  bar: {
+    columnWidth: '15%',
+    distributed: true,
+    borderRadius: 5,
+    horizontal: true,
+    dataLabels: {
+      position: 'center', // top, center, bottom
+    },
+  }
+},
+
+
+// yaxis: {
+//   categories: ['Actual Volume','Target Volume'],
+//   labels: {
+//     style: {
+//       colors: ['#111'],
+//       fontSize: '12px',
+//     }
+//   },
+// },
+dataLabels: {
+  enabled: true,
+  formatter: function (val) {
+    return val + "";
+  },
+  style: {
+    fontSize: '12px',
+    colors: ["red"]
+  }
+},
+
+};
+
+var chart = new ApexCharts(document.querySelector("#chart-perf"), options);
+chart.render();
+
+
 // Chart-share 
 
 var options = {

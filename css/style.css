@@ -1551,19 +1551,12 @@ a {
 }
 
 #chart-acti,
-#chart-acti__total,
 #chart-prog,
-#chart-prog__total {
+#chart-perf
+ {
     margin-left: -25px;
 }
 
-/* #chart-acti__total {
-    width: 250px;
-}
-
-#chart-prog__total {
-    width: 280px;
-} */
 
 #chart-act {
     margin-top: 20px;
