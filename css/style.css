@@ -1849,6 +1849,17 @@ th, td {
     cursor: pointer;
 }
 
+.main-table .table-outlet .td-title #local-city {
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding:5px 0 5px ;
+    margin-top: 10px;
+    background: rgba(31, 108, 47, 0.22);
+    color: #111;
+    width: 140px;
+}
+
 .main-table .table-outlet .td-desc {
     font-size: 14px;
     text-align: center;
