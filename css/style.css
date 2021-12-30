@@ -854,19 +854,14 @@ a {
 
 /* Upload - file */
 
-#uploadFile {
-    position: fixed;
-    top: 20%;
-    left: 40%;
-    z-index: 10000;
-}
-
 #uploadFile .content-upload {
     background: #fff;
     border: 1px solid #1A5D1F;
     box-shadow: 0px 0px 20px rgba(0, 0, 0,0.5);
-    width: 400px;
-    min-height: 200px;
+    padding: 30px 50px;
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
 }
 
 #uploadFile .update-file-outlet {
@@ -933,11 +928,23 @@ a {
 /* Unlock */
 /* Upload - file */
 
-#unlock {
+#unlock, 
+#uploadFile {
     position: fixed;
-    top: 20%;
-    left: 40%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 10000;
+    display: flex;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.4);
+    z-index: 0;
 }
 
 #unlock  .content-unlock {
@@ -946,7 +953,9 @@ a {
     box-shadow: 0px 0px 20px rgba(0, 0, 0,0.5);
     width: 400px;
     min-height: 200px;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
 }
 
 #unlock .container-unlock {
@@ -954,6 +963,7 @@ a {
     width: 250px;
     text-align: center;
     margin: 10% auto;
+    z-index: 4;
 }
 
 #unlock .container-unlock .unlock-box {
@@ -977,22 +987,6 @@ a {
     color: red;
 }
 
-/* #unlock .unlock-box {
-
-    background: #fff;
-    cursor: pointer;
-    color: red;
-    border: 1px solid #1A5D1F;
-    display: inline-block;
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 50px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    cursor: pointer;
-} */
 
 #unlock .btns {
     text-align: center;
