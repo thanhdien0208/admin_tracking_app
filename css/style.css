@@ -1863,17 +1863,40 @@ th, td {
 .main-table .table-outlet .td-desc {
     font-size: 14px;
     text-align: center;
+    position: relative;
 }
 
-.main-table .table-outlet .td-desc input[type="number"] {
+.main-table .table-outlet .td-desc input[type="text"] {
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 5px;
     width: 120px;
 }
 
-.main-table .table-outlet .td-desc input[type="number"]:focus {
+.main-table .table-outlet .td-desc input[type="text"]:focus {
     outline: 2px solid #1A5D1F;
+}
+
+.main-table .table-outlet .td-desc .btn-send {
+    position: absolute;
+    top: 8.5px;
+    right: 8px;
+    width: 20px;
+    height: 22px;
+    border-radius: 5px;
+    border: 1px solid #1A5D1F;
+    background: #1A5D1F;
+    cursor: pointer;
+}
+
+.main-table .table-outlet .td-desc .btn-send:hover {
+    opacity: .8;
+}
+
+.main-table .table-outlet .td-desc .btn-send i {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .main-table .table-outlet .text-small {
