@@ -966,6 +966,24 @@ a {
     z-index: 4;
 }
 
+#unlock  .content-unlock .icon-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+#unlock  .content-unlock .icon-close .fa-window-close {
+    color: red;
+    font-size: 20px;
+}
+
+#unlock  .content-unlock .icon-close .fa-window-close:hover {
+    opacity: 0.8;
+}
+
 #unlock .container-unlock .unlock-box {
     position: absolute;
     z-index: 1;
