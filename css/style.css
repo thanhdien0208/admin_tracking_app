@@ -1301,8 +1301,9 @@ a {
 
 .main-right .col-vertical .num-active {
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
     position: relative;
+    width: 250px;
 }
 
 .main-right .col-vertical .num-active .title {
@@ -1315,6 +1316,7 @@ a {
     color: #5a5a5a;
     font-size: 14px;
     margin-bottom: 15px;
+    text-align: center;
 }
 .main-right .col-vertical .num-active .desc-1 {
     color: #5a5a5a;
@@ -1602,7 +1604,7 @@ a {
 #chart-prog,
 #chart-perf
  {
-    margin-left: -80px;
+    margin-left: -15px;
 }
 
 

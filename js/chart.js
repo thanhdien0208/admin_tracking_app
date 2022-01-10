@@ -29,7 +29,7 @@ plotOptions: {
 
 
 xaxis: {
-  categories: ['Actual Acts','Total Acts'],
+  categories: [''],
   labels: {
     style: {
       colors: ['#111'],
@@ -83,7 +83,7 @@ plotOptions: {
 },
 
 xaxis: {
-  categories: ['Actual Volume','Total Volume'],
+  categories: [''],
   labels: {
     style: {
       colors: ['#111'],
@@ -149,7 +149,7 @@ plotOptions: {
 },
 
 xaxis: {
-  categories: ['Actual Volume','Target Volume'],
+  categories: [''],
   labels: {
     style: {
       colors: ['#111'],
