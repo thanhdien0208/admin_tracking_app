@@ -45,7 +45,6 @@ dataLabels: {
   style: {
     fontSize: '12px',
     colors: ["#fff"],
-    textShadow: '2px 2px 2px rgba(0, 0, 0,0.5)',
   }
 },
 
@@ -101,7 +100,6 @@ dataLabels: {
   style: {
     fontSize: '12px',
     colors: ["#fff"],
-    textShadow: '5px 5px 5px #333',
   },
   
 },
@@ -167,7 +165,6 @@ dataLabels: {
   style: {
     fontSize: '12px',
     colors: ["#fff"],
-    textShadow: '2px 2px 2px rgba(0, 0, 0,0.5)',
   }
 },
 
