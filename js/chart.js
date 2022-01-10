@@ -29,7 +29,7 @@ plotOptions: {
 
 
 xaxis: {
-  categories: [''],
+  categories: ['Actual Acts','Total Acts'],
   labels: {
     style: {
       colors: ['#111'],
@@ -44,7 +44,8 @@ dataLabels: {
   },
   style: {
     fontSize: '12px',
-    colors: ["red"]
+    colors: ["#fff"],
+    textShadow: '2px 2px 2px rgba(0, 0, 0,0.5)',
   }
 },
 
@@ -82,16 +83,15 @@ plotOptions: {
   }
 },
 
-
-// xaxis: {
-//   categories: [''],
-//   labels: {
-//     style: {
-//       colors: ['#111'],
-//       fontSize: '12px',
-//     }
-//   },
-// },
+xaxis: {
+  categories: ['Actual Volume','Total Volume'],
+  labels: {
+    style: {
+      colors: ['#111'],
+      fontSize: '12px',
+    }
+  },
+},
 dataLabels: {
   position: 'center', // top, center, bottom
   enabled: true,
@@ -100,8 +100,8 @@ dataLabels: {
   },
   style: {
     fontSize: '12px',
-    colors: ["red"],
-    
+    colors: ["#fff"],
+    textShadow: '5px 5px 5px #333',
   },
   
 },
@@ -150,16 +150,15 @@ plotOptions: {
   }
 },
 
-
-// yaxis: {
-//   categories: ['Actual Volume','Target Volume'],
-//   labels: {
-//     style: {
-//       colors: ['#111'],
-//       fontSize: '12px',
-//     }
-//   },
-// },
+xaxis: {
+  categories: ['Actual Volume','Target Volume'],
+  labels: {
+    style: {
+      colors: ['#111'],
+      fontSize: '12px',
+    }
+  },
+},
 dataLabels: {
   enabled: true,
   formatter: function (val) {
@@ -167,7 +166,8 @@ dataLabels: {
   },
   style: {
     fontSize: '12px',
-    colors: ["red"]
+    colors: ["#fff"],
+    textShadow: '2px 2px 2px rgba(0, 0, 0,0.5)',
   }
 },
 

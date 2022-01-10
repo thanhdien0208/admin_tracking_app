@@ -413,8 +413,9 @@ a {
 
 .sidebar {
     overflow-y: auto;
-    height: 130vh;
+    height: 125vh;
     margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .sidebar .sidebar-menu {
@@ -424,8 +425,21 @@ a {
     margin: 10px;
 }
 
-.sidebar .sidebar-menu_main {
-    padding: 30px 0;
+.sidebar-menu_main {
+    padding: 0;
+    margin-top: -5px;
+}
+
+.sidebar-menu_main .sidebar-menu_title {
+    position: fixed;
+    background: #198631;
+    color: #fff;
+    z-index: 111111111111111111;
+    width: 228px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
 }
 
 .sidebar .sidebar-menu:nth-child(4) {
@@ -544,6 +558,7 @@ a {
     width: 80%;
     border-radius: 5px;
     color: #fff;
+    font-size: 14px;
 }
 
 
@@ -1287,6 +1302,7 @@ a {
 .main-right .col-vertical .num-active {
     padding: 10px;
     text-align: center;
+    position: relative;
 }
 
 .main-right .col-vertical .num-active .title {
@@ -1299,6 +1315,26 @@ a {
     color: #5a5a5a;
     font-size: 14px;
     margin-bottom: 15px;
+}
+.main-right .col-vertical .num-active .desc-1 {
+    color: #5a5a5a;
+    font-size: 14px;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 53%;
+    left: 30%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 11111111111111;
+}
+.main-right .col-vertical .num-active .desc-2 {
+    color: #5a5a5a;
+    font-size: 14px;
+    margin-bottom: 15px;
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 11111111111111;
 }
 
 .main-right .col-vertical .num-active .number-one {
@@ -1566,7 +1602,7 @@ a {
 #chart-prog,
 #chart-perf
  {
-    margin-left: -25px;
+    margin-left: -80px;
 }
 
 
