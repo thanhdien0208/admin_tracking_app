@@ -1381,7 +1381,7 @@ a {
     top: 28%;
     left: 33%;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 11111111111111;
+    z-index: 1;
 }
 
 .main-right .col-vertical .num-active .desc-2 {
@@ -1392,7 +1392,7 @@ a {
     top: 80%;
     left: 33%;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 11111111111111;
+    z-index: 1;
 }
 
 .main-right .col-vertical .num-active .desc-3 {
@@ -1403,7 +1403,7 @@ a {
     top: 28%;
     left: 33%;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 11111111111111;
+    z-index: 1;
 }
 
 .main-right .col-vertical .num-active .desc-4 {
@@ -1414,7 +1414,7 @@ a {
     top: 76%;
     left: 33%;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 11111111111111;
+    z-index: 1;
 }
 
 .main-right .col-vertical .num-active .number-one {
