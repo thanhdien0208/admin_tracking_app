@@ -1695,12 +1695,16 @@ a {
 .row-bottom .footer {
     margin-top: -20px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .row-bottom .footer .icon-color {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 80%;
 }
 
 .row-bottom .footer .icon-color .icon-one {
@@ -1722,6 +1726,14 @@ a {
     font-size: 12px;
     color: #333;
     padding-left: 5px;
+}
+
+.row-bottom .footer .under {
+    width: 20%;
+}
+
+.row-bottom .footer .under p {
+    font-size: 12px;
 }
 
 #chart-acti,
