@@ -190,7 +190,7 @@ var options = {
         }
     },
     legend: {
-        show: true
+        show: false
     },
     lines: {
         show: false,
@@ -336,6 +336,9 @@ var options = {
     },
     stroke: {
         width: [0, 3],
+    },
+    legend: {
+        show: false
     },
     title: {
         text: 'Traffic Sources'
